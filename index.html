@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+<header>
+    <h1>Lista de Tarefas Diárias</h1>
+</header>
+
+<main>
+    <h3 class="explica">Aqui você poderá organizar as tarefas do seu dia de forma rápida e fácil!</h3>
+    <p class="aviso"><span>Importante:</span> Os elementos criados serão adicionados à lista conforme a ordem de criação.</p>
+<!--o "span" acima serve para dar uma aparência diferente apenas a palavra "importante", tornando a frase chamativa, mas não desagradáveç de se ler-->
+
+    <div class="lateral"> <!--essa div é responsável por cuidar do alinhamento do textarea, button e da lista-->
+        <div> <!--já essa div apenas encapsula o textarea e o button para que não se separem quando o css organizar a div acima-->
+            <input class="tarefa" type="text" placeholder="Escreva uma tarefa a ser adicionada a sua lista e pressione o botão 'adicionar' ou tecle 'enter'.">
+<!--a linha de código acima é a responsável por receber as informações do usuário. é nessa caixa de texto onde serão digitadas as tarefas.-->     
+            <button class="botao">Adicionar</button>
+        </div>    
+        <div> <!--essa div encapsula o h2 e a lista em si, para que não fiquem desalinhados quando o css agir na primeira div-->
+            <h2 class="cabecalho">Lista de tarefas</h2>
+            <ol class="container-lista">
+            </ol>
+        </div>
+    </div>  
+<!--aqui é onde será criada a lista com as tarefas do usuário, a partir da interação do input com JS--> 
+    
+</main>
+
+<footer>
+    <h3>Site desenvolvido por Matheus Barboza.</h3>
+    <p class="mini">Cursando Bacharelado em Tecnologia da Informação na Universidade Virtual do Estado de São Paulo.
+    <br> Esse projeto foi desenvolvido utilizando HTML, CSS e Javascript, no qual toda a documentação pode ser encontrada <a href="www.google.com" target="_blank">nesse link</a>.</p>
+    <p class="contato">Contato e projetos: <a href="https://www.linkedin.com/in/matheus-barboza7/" target="_blank">Linkedin</a> <a href="https://github.com/barbozamatheus" target="_blank">Github</a></p>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
